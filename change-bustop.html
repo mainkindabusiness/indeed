@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+    <style>
+    
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div>
+            <div class="jquery-script-center">
+            
+            </div>
+            </div>
+                    <div>
+                        <img class="logo" src="car-park.png" alt="">
+                    </div>
+                    <p class="lead">Edit Bustop</p>
+                    <center>
+                       <p class="current-head">Current Bustop</p>
+                       <p class="current">Itamaga Roundabout</p>
+                        <form action="driver-homepage.html">
+                          <div class="control">
+                            <input class="city" type="text" id="city" placeholder="City/town" name="city" required> 
+                            <p class="form-info">Please input your current city or town</p>
+                          </div>
+                
+                          <div class="control">
+                            <input class="city" type="text" id="address" placeholder="Bustop" name="address" required>
+                            <p class="form-info">Please input your Bustop</p>
+                          </div>
+                          
+
+                          <select id="numbofpassangers" name="numbofpassangers" required>
+                            <option value="select">Vehicle Seaters</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="10">11</option>
+                            <option value="10">12</option>
+                            <option value="10">13</option>
+                            <option value="10">14</option>
+                            <option value="10">15</option>
+                            <option value="10">16</option>
+                            <option value="10">17</option>
+                            <option value="10">18</option>
+                            <option value="10">19</option>
+                            <option value="10">20</option>
+                            <option value="10">21</option>
+                            <option value="10">22</option>
+                            <option value="10">23</option>
+                            <option value="10">24</option>
+                            <option value="10">25</option>
+                            <option value="10">26</option>
+                            <option value="10">27</option>
+                            <option value="10">28</option>
+                            <option value="10">29</option>
+                            <option value="10">30</option>
+                        </select>
+                        <p class="form-info">Choose numbers of passengers your ride can take<br>
+                           <u>WARNING</u> <br>
+                        1. We do not allow discomfort of people in your ride<br> 2. No lapping of people in your ride <br> 3. No overloading of people in your ride</p>
+
+                          <div class="control">
+                            Please let us know list of your bustops you cover
+                            <input class="city" type="text" id="address" placeholder="Bustop 1" name="address" required>
+                            <input class="city" type="text" id="address" placeholder="Bustop 2" name="address" required>
+                            <input class="city" type="text" id="address" placeholder="Bustop 3" name="address" required>
+                            <input class="city" type="text" id="address" placeholder="Bustop 4" name="address" required>
+                            <input class="city" type="text" id="address" placeholder="Bustop 5" name="address" required>
+</div>
+                            <button onclick="alert('Your Bustop is updated')" type="submit">Update </button>
+
+        </form>
+    </div>
+                          
+
+
+
+
+
+
+  <!-- partial:index.partial.html -->
+    <!-- partial:index.partial.html -->
+    <nav class="navigation-tab">
+        <a href="driver-homepage.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Home</span>
+            </div>
+        </a>
+
+        <a href="requests.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="phone-call.png" alt="Requests">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Requests</span>
+            </div>
+        </a>
+
+        <a href="drivers-wallet.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="suitcase.png" alt="Wallet">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Wallet</span>
+            </div>
+        </a>
+
+        <a href="rider-profile.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="user.png" alt="Profile">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Account</span>
+            </div>
+        </a>
+        <div class="navigation-tab-overlay"></div>
+    </nav>
+    <!-- partial -->
+    </span>
+
+
+        <script>
+            function changeIcon(anchor) {
+                var icon = anchor.querySelector("i");
+                icon.classList.toggle('bx-show');
+                icon.classList.toggle('bx-hide');
+                anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+            }
+        </script>
+
+
+
+    </div>
+</body>
+
+</html>

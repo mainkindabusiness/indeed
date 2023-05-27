@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Sign up</title>
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <style>
+    
+    .note-icon {
+      width: 24px;
+      vertical-align: -8px;
+    }
+    .note-text {
+      margin-left: 2px;
+    }
+    .safe-info {
+      width: 300px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+
+      <img class="tranzipperlogo" src="TranZipper logo.png"> <p"text-align: center;">
+
+      <div class="main-page">
+
+      <h1>
+        Verify your information
+      </h1>
+      <p> Verify your information to setup your account</p>
+
+        <form action="upload-id.html">
+          <div class="control">
+            <input class="nin" type="text" id="nin" placeholder="Enter your N.I.N" name="nin" required>
+          </div>
+
+          <div class="control">
+            <input class="dob" type="text" id="dob" placeholder="Date of Birth" name="dob" required>
+          </div>
+
+          <div class="control">
+            <input class="address" type="text" id="address" placeholder="Enter your address" name="address" required>
+          </div>
+
+          <div class="control">
+            <input class="bus-stop" type="text" id="bus-stop" placeholder="Enter your nearest Bus-stop/Landmark" name="address" required>
+          </div>
+
+          <div class="control">
+            <input class="city" type="text" id="city" placeholder="Enter your city" name="city" required>
+          </div>
+
+          <div class="control">
+            <input class="state" type="text" id="state" placeholder="Enter your state" name="state" required>
+          </div>
+
+          <button type="submit">Sign up</button>
+
+        </form>
+
+      <p class="safe-info">
+        <img class="note-icon" src="locked1-svgrepo-com.png"> <span
+          class="note-text">Your personal information is securely stored and kept confidential</span>
+      </p>
+
+
+
+
+
+
+
+
+
+      <script src="build/js/intlTelInput.js"></script>
+      <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          // allowDropdown: false,
+          // autoInsertDialCode: true,
+          // autoPlaceholder: "off",
+          // dropdownContainer: document.body,
+          // excludeCountries: ["us"],
+          // formatOnDisplay: false,
+          // geoIpLookup: callback => {
+          //   fetch("http://ip-api.com/json")
+          //     .then(res => res.json())
+          //     .then(data => callback(data.countryCode))
+          //     .catch(() => callback("us"));
+          // },
+          // hiddenInput: "full_number",
+          // initialCountry: "auto",
+          // localizedCountries: { 'de': 'Deutschland' },
+          // nationalMode: false,
+          // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+          // placeholderNumberType: "MOBILE",
+          // preferredCountries: ['cn', 'jp'],
+          // separateDialCode: true,
+          utilsScript: "build/js/utils.js",
+        });
+      </script>
+
+    </div>

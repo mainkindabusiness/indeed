@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter code</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        
+        .page {
+            height: 812px;
+        }
+
+        .container {
+            display: block;
+            height: 100vh;
+            width: 315px;
+            margin: 0 auto;
+        }
+
+        .radio-tile-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .input-container {
+            position: relative;
+            height: 7rem;
+            width: 7rem;
+            margin: 0.5rem;
+        }
+
+
+        .radio-button {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            cursor: pointer;
+        }
+
+
+        .radio-tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #174e1b;
+            border-radius: 5px;
+            transition: transform 300ms ease;
+        }
+
+        .icon svg {
+            fill: #174e1b;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .radio-tile-label {
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #174e1b;
+        }
+
+        .radio-button:checked+.radio-tile {
+            background-color: #174e1b;
+            border: 2px solid #174e1b;
+            color: white;
+            transform: scale(1.1, 1.1);
+        }
+
+        .icon svg {
+            fill: white;
+        }
+
+        .radio-tile-label {
+            color: white;
+        }
+        form button {
+            margin-top: 50px;
+            margin-top: 10px;
+        }
+        .main-page p {
+            text-align: left;
+            width: 270px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <center>
+            <img class="tranzipperlogo" src="tranzipper-logo.png"> <p"text-align: center;">
+        </center>
+        <div class="main-page">
+
+            <h1>
+                Choose your ride
+            </h1>
+            <p>
+                Choose one from these options
+            </p>
+
+            <div class="container">
+                <form action="upload-vehicle.html">
+                <div class="radio-tile-group">
+                  <div class="input-container">  
+                    <input id="personal-car" class="radio-button" type="radio" name="radio" required/>
+                    <div class="radio-tile">
+                      <div class="icon walk-icon">
+                        <svg fill="#000000" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4H6.5C5.84 4 5.29 4.42 5.08 5.01L3 11V19C3 19.55 3.45 20 4 20H5C5.55 20 6 19.55 6 19V18H18V19C18 19.55 18.45 20 19 20H20C20.55 20 21 19.55 21 19V11L18.92 5.01ZM6.5 15C5.67 15 5 14.33 5 13.5C5 12.67 5.67 12 6.5 12C7.33 12 8 12.67 8 13.5C8 14.33 7.33 15 6.5 15ZM17.5 15C16.67 15 16 14.33 16 13.5C16 12.67 16.67 12 17.5 12C18.33 12 19 12.67 19 13.5C19 14.33 18.33 15 17.5 15ZM5 10L6.5 5.5H17.5L19 10H5Z"
+              </svg>
+                      </div>
+                      <label for="personal-car" class="radio-tile-label">Personal<br>car</label>
+                    </div>
+                  </div>
+              
+                  <div class="input-container">
+                    <input id="danfo" class="radio-button" type="radio" name="radio" />
+                    <div class="radio-tile">
+                      <div class="icon bike-icon">
+                        <svg fill="#000000" height="24" width="24" version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="-63 65 128 128" xml:space="preserve">
+              <path d="M39.5,127.2H-33c-2.1,0-3.9-1.8-3.9-3.9c0-0.4,0.1-0.7,0.1-1l3.9-28.6c0.3-1.8,1.9-3.2,3.8-3.2h64.7c1.9,0,3.5,1.4,3.8,3.2
+                l3.8,28.6c0.1,0.3,0.1,0.7,0.1,1C43.4,125.5,41.7,127.2,39.5,127.2 M36.6,158.4c-4.1,0-7.4-3.3-7.4-7.4s3.3-7.4,7.4-7.4
+                c4,0,7.4,3.3,7.4,7.4S40.7,158.4,36.6,158.4 M-30.2,158.4c-4,0-7.4-3.3-7.4-7.4s3.3-7.4,7.4-7.4s7.4,3.3,7.4,7.4
+                S-26.1,158.4-30.2,158.4 M-18.7,77.6h43.9c4.3,0,4.3,8.2,0,8.2h-43.9C-23,85.8-23,77.6-18.7,77.6 M47.1,87.1
+                c-1.3-6.5-5.5-9.2-11.8-11.8c-6.3-2.6-21-5.8-32-5.8s-25.7,3.1-32,5.8c-6.3,2.6-10.5,5.2-11.8,11.8l-4.7,36.3v50h8.2v7.8
+                c0,9.6,14,9.6,14,0v-7.8h52.8v7.8c0,9.6,14,9.6,14,0v-7.8h8.1v-50L47.1,87.1z"/>
+              </svg>
+                      </div>
+                      <label for="danfo" class="radio-tile-label">Danfo</label>
+                    </div>
+                  </div>
+              
+                  <div class="input-container">
+                    <input id="korope" class="radio-button" type="radio" name="radio" />
+                    <div class="radio-tile">
+                      <div class="icon car-icon">
+                        <svg fill="#000000" height="18" width="16" version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="-63 65 128 128" xml:space="preserve">
+              <path d="M39.5,127.2H-33c-2.1,0-3.9-1.8-3.9-3.9c0-0.4,0.1-0.7,0.1-1l3.9-28.6c0.3-1.8,1.9-3.2,3.8-3.2h64.7c1.9,0,3.5,1.4,3.8,3.2
+                l3.8,28.6c0.1,0.3,0.1,0.7,0.1,1C43.4,125.5,41.7,127.2,39.5,127.2 M36.6,158.4c-4.1,0-7.4-3.3-7.4-7.4s3.3-7.4,7.4-7.4
+                c4,0,7.4,3.3,7.4,7.4S40.7,158.4,36.6,158.4 M-30.2,158.4c-4,0-7.4-3.3-7.4-7.4s3.3-7.4,7.4-7.4s7.4,3.3,7.4,7.4
+                S-26.1,158.4-30.2,158.4 M-18.7,77.6h43.9c4.3,0,4.3,8.2,0,8.2h-43.9C-23,85.8-23,77.6-18.7,77.6 M47.1,87.1
+                c-1.3-6.5-5.5-9.2-11.8-11.8c-6.3-2.6-21-5.8-32-5.8s-25.7,3.1-32,5.8c-6.3,2.6-10.5,5.2-11.8,11.8l-4.7,36.3v50h8.2v7.8
+                c0,9.6,14,9.6,14,0v-7.8h52.8v7.8c0,9.6,14,9.6,14,0v-7.8h8.1v-50L47.1,87.1z"/>
+              </svg>
+                      </div>
+                      <label for="korope" class="radio-tile-label">Korope</label>
+                    </div>
+                  </div>
+              
+                  <div class="input-container">
+                    <input id="towing-vehicle" class="radio-button" type="radio" name="radio" />
+                    <div class="radio-tile">
+                      <div class="icon fly-icon">
+                        <svg fill="#000000" width="24" height="24" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4.96875 4C4.726563 4.007813 4.464844 4.097656 4.28125 4.28125L3.28125 5.28125C2.917969 5.644531 2.890625 6.226563 3.21875 6.625L17 23.34375L17 26L27 26L27 23C27 22.707031 26.878906 22.441406 26.65625 22.25L5.65625 4.25C5.457031 4.082031 5.210938 3.992188 4.96875 4 Z M 4 10.71875L4 19C4 19.550781 4.449219 20 5 20C5.550781 20 6 20.449219 6 21C6 21.550781 5.550781 22 5 22C4.449219 22 4 21.550781 4 21L2 21C2 22.652344 3.347656 24 5 24C6.652344 24 8 22.652344 8 21C8 19.695313 7.164063 18.570313 6 18.15625L6 13.15625 Z M 32 13C30.347656 13 29 14.347656 29 16L29 38L33.09375 38C33.574219 40.832031 36.03125 43 39 43C41.96875 43 44.429688 40.832031 44.90625 38L47 38C48.652344 38 50 36.652344 50 35L50 25.375C50 23.363281 48.550781 21.308594 48.375 21.0625L44.21875 15.5C43.265625 14.351563 41.773438 13 40 13 Z M 38 19L44.34375 19L46.78125 22.25C47.085938 22.675781 47.816406 23.902344 47.96875 25L38 25C37.550781 25 37 24.449219 37 24L37 20C37 19.445313 37.546875 19 38 19 Z M 0 28L0 35C0 36.652344 1.347656 38 3 38L7.09375 38C7.574219 40.832031 10.03125 43 13 43C15.96875 43 18.425781 40.832031 18.90625 38L27 38L27 28 Z M 13 33C15.207031 33 17 34.792969 17 37C17 39.207031 15.207031 41 13 41C10.792969 41 9 39.207031 9 37C9 34.792969 10.792969 33 13 33 Z M 39 33C41.207031 33 43 34.792969 43 37C43 39.207031 41.207031 41 39 41C36.792969 41 35 39.207031 35 37C35 34.792969 36.792969 33 39 33Z"/>
+                        </svg>
+                      </div>
+                      <label for="towing-vehicle" class="radio-tile-label">Towing Vehicle</label>
+                    </div>
+                  </div>
+                        <div class="input-container">
+                    <input id="okada" class="radio-button" type="radio" name="radio" />
+                    <div class="radio-tile">
+                      <div class="icon car-icon">
+                        <svg fill="#000000" width="24" height="24" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                 viewBox="0 0 512 512"  xml:space="preserve">
+              <g>
+                <path class="st0" d="M417.975,226.338c-5.966,0-11.764,0.618-17.404,1.684l-33.048-100.841
+                  c-5.781-17.644-22.258-29.577-40.822-29.577h-45.506v24.414h45.506c8.038-0.008,15.147,5.155,17.636,12.768l6.028,18.433h-60.684
+                  c-31.084,0-54.424,15.542-54.424,15.542v45.358h135.064l7.064,21.54c-31.579,15.163-53.42,47.345-53.435,84.704
+                  c0.016,51.936,42.09,94.018,94.026,94.033c51.92-0.015,94.01-42.097,94.025-94.033
+                  C511.985,268.435,469.895,226.353,417.975,226.338z M461.456,363.844c-11.175,11.144-26.462,18.007-43.48,18.007
+                  c-17.034,0-32.29-6.862-43.466-18.007c-11.144-11.176-18.008-26.447-18.008-43.481c0-17.026,6.863-32.29,18.008-43.465
+                  c3.88-3.88,8.409-7.01,13.185-9.754l11.114,33.928c-4.962,4.931-8.037,11.748-8.037,19.29c0,15.032,12.18,27.22,27.204,27.22
+                  c15.024,0,27.204-12.188,27.204-27.22c0-13.633-10.062-24.809-23.14-26.787l-11.128-33.974c2.35-0.278,4.637-0.711,7.064-0.711
+                  c17.018,0,32.305,6.855,43.48,18.008c11.144,11.175,17.977,26.439,18.008,43.465C479.432,337.397,472.6,352.668,461.456,363.844z"
+                  />
+                <path class="st0" d="M94.01,226.338C42.074,226.353,0.016,268.435,0,320.363c0.016,51.936,42.074,94.018,94.01,94.033
+                  c51.936-0.015,94.01-42.097,94.026-94.033C188.02,268.435,145.946,226.353,94.01,226.338z M137.491,363.844
+                  c-11.176,11.144-26.447,18.007-43.481,18.007c-17.034,0-32.29-6.862-43.466-18.007c-11.16-11.176-18.008-26.447-18.008-43.481
+                  c0-17.026,6.848-32.29,18.008-43.465C61.72,265.745,76.976,258.89,94.01,258.89c17.034,0,32.306,6.855,43.481,18.008
+                  c11.144,11.175,17.992,26.439,18.008,43.465C155.483,337.397,148.636,352.668,137.491,363.844z"/>
+                <path class="st0" d="M94.01,293.167c-15.024,0-27.204,12.172-27.204,27.196c0,15.032,12.18,27.22,27.204,27.22
+                  c15.025,0,27.22-12.188,27.22-27.22C121.23,305.339,109.035,293.167,94.01,293.167z"/>
+                <path class="st0" d="M439.074,207.55v-65.855c-27.854,0-45.583,18.997-45.583,18.997v27.854
+                  C393.491,188.546,411.22,207.55,439.074,207.55z"/>
+                <rect x="450.868" y="141.68" class="st0" width="13.525" height="65.847"/>
+                <path class="st0" d="M70.5,214.119H220.17v-42.762h-45.52c-12.212,0-24.345-1.932-35.954-5.742l-16.261-5.34
+                  c-11.592-3.81-23.742-5.758-35.953-5.758H70.5c-8.47,0-15.348,6.886-15.348,15.372v28.858
+                  C55.151,207.233,62.029,214.119,70.5,214.119z"/>
+                <path class="st0" d="M343.302,232.111v-1.352H167.03c26.029,21.161,42.708,53.435,42.708,89.636c0,3.246,1.112,9.761,10.433,9.761
+                  h69.928c8.888,0,12.118-6.515,12.118-9.761C302.217,284.998,318.199,253.272,343.302,232.111z"/>
+              </g>
+              </svg>
+                      </div>
+                      <label for="okada" class="radio-tile-label">Okada</label>
+                    </div>
+                  </div>
+                    
+                    <div class="input-container">
+                    <input id="okada" class="radio-button" type="radio" name="radio" />
+                    <div class="radio-tile">
+                      <div class="icon car-icon">
+                        <svg fill="#000000" version="1.0" xmlns="http://www.w3.org/2000/svg"
+               width="24" height="24" viewBox="0 0 512 512"
+               preserveAspectRatio="xMidYMid meet">
+              
+              <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+              >
+              <path d="M288 4341 c-31 -10 -72 -28 -91 -40 -59 -36 -143 -135 -169 -198
+              l-23 -58 -3 -610 -3 -610 772 -68 c424 -37 774 -66 776 -63 3 3 -16 216 -42
+              473 -28 284 -45 494 -42 535 5 79 35 138 99 192 86 74 26 72 1145 49 549 -12
+              1001 -19 1006 -16 11 7 8 136 -4 171 -6 17 -18 34 -27 37 -9 4 -271 25 -582
+              46 -1300 89 -2674 179 -2713 178 -23 0 -67 -8 -99 -18z"/>
+              <path d="M3880 3516 l0 -349 54 -111 c73 -150 165 -286 251 -371 68 -68 169
+              -134 183 -120 4 4 6 61 5 128 -4 336 -155 727 -416 1072 -33 44 -64 84 -68 90
+              -5 5 -9 -144 -9 -339z"/>
+              <path d="M3166 2879 c-33 -26 -37 -88 -6 -119 17 -17 33 -20 126 -20 101 0
+              107 -1 150 -31 l45 -31 72 37 c40 21 76 41 80 45 4 4 -36 37 -90 73 l-98 67
+              -126 0 c-113 0 -129 -2 -153 -21z"/>
+              <path d="M3880 2178 c1 -479 4 -649 14 -701 7 -37 15 -69 17 -71 8 -8 143 220
+              214 359 102 200 190 440 219 595 6 35 6 35 -46 54 -120 42 -263 168 -365 320
+              l-53 78 0 -634z"/>
+              <path d="M3607 2618 c-54 -38 -107 -84 -118 -102 -18 -29 -19 -55 -19 -471
+              l-1 -440 -23 62 c-25 66 -32 78 -80 132 -85 93 -152 111 -408 111 l-198 0 0
+              243 c0 271 -4 291 -69 334 -29 20 -47 23 -123 23 -81 0 -91 -2 -113 -25 l-25
+              -24 0 -431 0 -430 645 0 645 0 0 545 c0 300 -3 545 -7 544 -5 0 -52 -32 -106
+              -71z"/>
+              <path d="M0 2018 c0 -620 1 -644 20 -675 30 -50 61 -64 149 -70 l79 -6 12 57
+              c16 80 82 206 140 269 140 153 361 225 560 183 221 -47 399 -216 458 -436 l17
+              -65 1164 -3 1164 -2 -7 52 c-4 29 -12 75 -18 102 l-10 49 -1024 -7 -1023 -8
+              -6 34 c-3 18 -25 238 -50 488 -58 593 -49 538 -88 545 -29 5 -1500 135 -1526
+              135 -8 0 -11 -176 -11 -642z"/>
+              <path d="M4525 2025 c-107 -29 -119 -38 -150 -112 -46 -110 -157 -331 -218
+              -432 -32 -52 -56 -96 -54 -97 8 -9 425 191 582 279 181 102 365 240 365 276 0
+              16 -103 60 -192 81 -98 23 -257 26 -333 5z"/>
+              <path d="M766 1619 c-133 -22 -259 -121 -320 -249 -59 -126 -45 -300 34 -414
+              160 -233 479 -262 671 -59 127 134 155 331 72 497 -56 110 -189 205 -319 226
+              -66 11 -69 11 -138 -1z"/>
+              <path d="M4770 1525 c-52 -30 -99 -56 -103 -58 -5 -1 16 -64 47 -139 31 -75
+              56 -145 56 -155 0 -54 -62 -91 -114 -69 -29 12 -38 26 -69 102 -19 49 -44 110
+              -56 136 l-20 47 -123 -58 c-120 -57 -123 -59 -131 -97 -21 -101 37 -261 126
+              -347 264 -258 703 -94 734 274 9 104 -26 217 -95 307 -27 35 -128 112 -146
+              112 -6 0 -54 -25 -106 -55z"/>
+              </g>
+              </svg>
+                      </div>
+                      <label for="okada" class="radio-tile-label">Keke Maruwa</label>
+                    </div>
+                  </div>
+                  <p>
+                    Personal car is only for picking and dropping-off schedule of passengers only.
+                  </p>
+                  <button type="submit">Next</button>
+                </form>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+
+    </body>
+    </html>

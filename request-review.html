@@ -6,187 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link rel="website icon" type="png" href="tranzipper-logo.png">
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="manage-audio.css">
     <link rel="stylesheet" href="build/css/intlTelInput.css">
-  <link rel="stylesheet" href="build/css/demo.css">
+    <link rel="stylesheet" href="build/css/demo.css">
+    <link href="css/tranzipper.css" rel="stylesheet" type="text/css">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 100;
-            font-size: 14px;
-            line-height: 1.7;
-            color: #c4c3ca;
-            background-color: #c4c3ca;
-            overflow-x: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
-        .page {
-            padding-top: 30px;
-            padding-bottom: 50px;
-            width: 380px;
-            margin: 0px auto 10px;
-            border: 1px solid #ddd;
-            border-radius: 7px 7px 7px 7px;
-            background-color: rgb(3, 49, 25);
-            box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 10%);
-        }
-
-
-        h3 {
-            margin-left: 25px;
-            font-weight: normal;
-            margin-bottom: 5px;
-            margin-top: 30px;
-        }
-
-        .img-nav {
-            width: 30px;
-        }
-
-        .navigation-tab {
-            height: 60px;
-            width: 380px;
-            background-color: #fff;
-            box-shadow: 0 50px 30px 0 rgb(0 0 0 / 18%);
-            border-radius: 7px;
-            overflow: hidden;
-            border: 1px solid #fff;
-            display: flex;
-            top: 50%;
-            left: 50%;
-            margin: 285px 0 0 -191px;
-            position: fixed;
-            flex-shrink: 0;
-            line-height: 0;
-        }
-
-        .navigation-tab-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 130px;
-            flex-shrink: 0;
-            transition: 0.3s;
-            position: relative;
-            z-index: 2;
-        }
-
-        .navigation-tab-item.active {
-            width: 90px;
-            height: 35px;
-        }
-
-        .navigation-tab-item.active .navigation-tab_icon {
-            transform: translate(0px, -10px);
-        }
-
-        .navigation-tab-item.active .navigation-tab_txt {
-            opacity: 1;
-            transform: translate(0, 10px);
-        }
-
-        .navigation-tab-overlay {
-            border-radius: 20px;
-            height: 100%;
-            width: 210px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            transition: 0.3s;
-        }
-
-        .navigation-tab_icon {
-            display: block;
-            color: #4298e7;
-            transition-duration: 0.3s;
-            line-height: 1;
-            transform: translate(0, 11px);
-        }
-
-        .navigation-tab_txt {
-            display: block;
-            font-weight: 400;
-            font-size: 14px;
-            color: #000000;
-            opacity: 0;
-            transition-duration: 0.3s;
-            transform: translate(0, 20px);
-            user-select: none;
-        }
-
-        .navigation-tab___icon {
-            cursor: pointer; 
-            display: flex;
-    justify-content: center;
-        }
-
-        a {
-            color: #ffffff;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        h1,
-        h2 {
-            font-size: 17px;
-        }
-
-		p.lead { font-size: 18px; text-align: center; }
-	    
-        .logo {
-      width: 90px;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .control, select {
-      margin-bottom: 10px;
-      margin-top: 20px;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-      font-weight: 400;
-      cursor: pointer;
-    }
-    .form-info {
-      margin-top: 0;
-      font-size: 11px;
-      font-weight: 100;
-      font-style: italic;
-    }
-    h1 {
-      display: inline-block;
-      margin-left: 10px;
-    }
-
-    .current-head {
-        margin-bottom: 0px;
-    }
-    .current {
-        height: 37px;
-  padding: 6px 12px;
-  width: 250px;
-  background-color: #ddddddb5;
-  border-radius: 2px;
-  font-family: inherit;
-  font-size: 100%;
-  color: rgb(118, 118, 118);
-  border-color: black;
-  display: block;
-  margin-top: 0px;
-    }
-    hr {
-            border-color: #c8cdc5;
-        }
     </style>
 </head>
 
@@ -195,139 +22,144 @@
 
         <div>
             <div class="jquery-script-center">
-            
+
             </div>
-            </div>
-                    <div>
-                        <img class="logo" src="customer-review.png" alt="">
+        </div>
+        <div>
+            <img class="logo" src="customer-review.png" alt="">
+        </div>
+        <p class="lead">Edit Bustop</p>
+
+            <p class="current-head">Current Bustop</p>
+            <p class="current">Itamaga Roundabout</p>
+            <form action="list-of-riders.html">
+                <div class="control">
+                    <input class="city" type="text" id="city" placeholder="City/town" name="city" required>
+                    <p class="form-info">Please input your current city or town</p>
+                </div>
+
+                <div class="control">
+                    <input class="city" type="text" id="address" placeholder="Bustop" name="address" required>
+                    <p class="form-info">Please input your Bustop</p>
+                </div>
+
+
+                <select id="numbofpassangers" name="numbofpassangers" required>
+                    <option value="select">Numbers of passangers</option>
+                    <option value="Chartter">Chatter a ride</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="10">11</option>
+                    <option value="10">12</option>
+                    <option value="10">13</option>
+                    <option value="10">14</option>
+                    <option value="10">15</option>
+                    <option value="10">16</option>
+                    <option value="10">17</option>
+                    <option value="10">18</option>
+                    <option value="10">19</option>
+                    <option value="10">20</option>
+                    <option value="10">21</option>
+                    <option value="10">22</option>
+                    <option value="10">23</option>
+                    <option value="10">24</option>
+                    <option value="10">25</option>
+                    <option value="10">26</option>
+                    <option value="10">27</option>
+                    <option value="10">28</option>
+                    <option value="10">29</option>
+                    <option value="10">30</option>
+                </select>
+                <p class="form-info">Choose numbers of passengers your ride can take<br>
+                    <u>WARNING</u> <br>
+                    1. We do not allow discomfort of people in your ride<br> 2. No lapping of people in your ride <br>
+                    3. No overloading of people in your ride
+                </p>
+
+                <div class="control">
+                    Please let us know list of your bustops you cover
+                    <input class="city" type="text" id="address" placeholder="Bustop 1" name="address" required>
+                    <input class="city" type="text" id="address" placeholder="Bustop 2" name="address" required>
+                    <input class="city" type="text" id="address" placeholder="Bustop 3" name="address" required>
+                    <input class="city" type="text" id="address" placeholder="Bustop 4" name="address" required>
+                    <input class="city" type="text" id="address" placeholder="Bustop 5" name="address" required>
+                </div>
+                <button type="submit">Update </button>
+
+            </form>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+            <!-- partial:index.partial.html -->
+            <nav class="navigation-tab">
+                <a href="homepage.html">
+                    <div class="navigation-tab-item active">
+                        <span class="navigation-tab___icon">
+                            <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+                        </span>
+                        <span class="navigation-tab___icon">
+                            <span class="navigation-tab_txt">Home</span>
                     </div>
-                    <p class="lead">Edit Bustop</p>
-                    <center>
-                       <p class="current-head">Current Bustop</p>
-                       <p class="current">Itamaga Roundabout</p>
-                        <form action="list-of-riders.html">
-                          <div class="control">
-                            <input class="city" type="text" id="city" placeholder="City/town" name="city" required> 
-                            <p class="form-info">Please input your current city or town</p>
-                          </div>
-                
-                          <div class="control">
-                            <input class="city" type="text" id="address" placeholder="Bustop" name="address" required>
-                            <p class="form-info">Please input your Bustop</p>
-                          </div>
-                          
+                </a>
 
-                          <select id="numbofpassangers" name="numbofpassangers" required>
-                            <option value="select">Numbers of passangers</option>
-                            <option value="Chartter">Chatter a ride</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="10">11</option>
-                            <option value="10">12</option>
-                            <option value="10">13</option>
-                            <option value="10">14</option>
-                            <option value="10">15</option>
-                            <option value="10">16</option>
-                            <option value="10">17</option>
-                            <option value="10">18</option>
-                            <option value="10">19</option>
-                            <option value="10">20</option>
-                            <option value="10">21</option>
-                            <option value="10">22</option>
-                            <option value="10">23</option>
-                            <option value="10">24</option>
-                            <option value="10">25</option>
-                            <option value="10">26</option>
-                            <option value="10">27</option>
-                            <option value="10">28</option>
-                            <option value="10">29</option>
-                            <option value="10">30</option>
-                        </select>
-                        <p class="form-info">Choose numbers of passengers your ride can take<br>
-                           <u>WARNING</u> <br>
-                        1. We do not allow discomfort of people in your ride<br> 2. No lapping of people in your ride <br> 3. No overloading of people in your ride</p>
+                <a href="ai.html">
+                    <div class="navigation-tab-item active">
+                        <span class="navigation-tab___icon">
+                            <img class="img-nav" src="phone-call.png" alt="Requests">
+                        </span>
+                        <span class="navigation-tab___icon">
+                            <span class="navigation-tab_txt">Requests</span>
+                    </div>
+                </a>
 
-                          <div class="control">
-                            Please let us know list of your bustops you cover
-                            <input class="city" type="text" id="address" placeholder="Bustop 1" name="address" required>
-                            <input class="city" type="text" id="address" placeholder="Bustop 2" name="address" required>
-                            <input class="city" type="text" id="address" placeholder="Bustop 3" name="address" required>
-                            <input class="city" type="text" id="address" placeholder="Bustop 4" name="address" required>
-                            <input class="city" type="text" id="address" placeholder="Bustop 5" name="address" required>
-</div>
-                            <button type="submit">Update </button>
+                <a href="wallet.html">
+                    <div class="navigation-tab-item active">
+                        <span class="navigation-tab___icon">
+                            <img class="img-nav" src="suitcase.png" alt="Wallet">
+                        </span>
+                        <span class="navigation-tab___icon">
+                            <span class="navigation-tab_txt">Wallet</span>
+                    </div>
+                </a>
 
-        </form>
-                          
+                <a href="your-profile.html">
+                    <div class="navigation-tab-item active">
+                        <span class="navigation-tab___icon">
+                            <img class="img-nav" src="user.png" alt="Profile">
+                        </span>
+                        <span class="navigation-tab___icon">
+                            <span class="navigation-tab_txt">Account</span>
+                    </div>
+                </a>
+                <div class="navigation-tab-overlay"></div>
+            </nav>
+            <!-- partial -->
+            </span>
 
 
-
-
-
-
-        <!-- partial:index.partial.html -->
-        <nav class="navigation-tab">
-            <a href="homepage.html">
-                <div class="navigation-tab-item active">
-                    <span class="navigation-tab___icon">
-                        <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
-                    </span>
-                    <span class="navigation-tab___icon">
-                        <span class="navigation-tab_txt">Home</span>
-                </div>
-            </a>
-
-            <a href="ai.html">
-                <div class="navigation-tab-item active">
-                    <span class="navigation-tab___icon">
-                        <img class="img-nav" src="phone-call.png" alt="Requests">
-                    </span>
-                    <span class="navigation-tab___icon">
-                        <span class="navigation-tab_txt">Requests</span>
-                </div>
-            </a>
-
-            <a href="wallet.html">
-                <div class="navigation-tab-item active">
-                    <span class="navigation-tab___icon">
-                        <img class="img-nav" src="suitcase.png" alt="Wallet">
-                    </span>
-                    <span class="navigation-tab___icon">
-                        <span class="navigation-tab_txt">Wallet</span>
-                </div>
-            </a>
-
-            <a href="your-profile.html">
-                <div class="navigation-tab-item active">
-                    <span class="navigation-tab___icon">
-                        <img class="img-nav" src="user.png" alt="Profile">
-                    </span>
-                    <span class="navigation-tab___icon">
-                        <span class="navigation-tab_txt">Account</span>
-                </div>
-            </a>
-            <div class="navigation-tab-overlay"></div>
-        </nav>
-        <!-- partial -->
-        </span>
-
-
-        <script>
-            function changeIcon(anchor) {
-                var icon = anchor.querySelector("i");
-                icon.classList.toggle('bx-show');
-                icon.classList.toggle('bx-hide');
-                anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
-            }
-        </script>
+            <script>
+                function changeIcon(anchor) {
+                    var icon = anchor.querySelector("i");
+                    icon.classList.toggle('bx-show');
+                    icon.classList.toggle('bx-hide');
+                    anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+                }
+            </script>
 
 
 

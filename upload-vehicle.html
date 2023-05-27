@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter code</title>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  h1 {
+    margin-bottom: 0;
+  }
+
+    .drop-zone {
+      max-width: 150px;
+      height: 150px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Quicksand", sans-serif;
+      cursor: pointer;
+      border: 1px solid #174e1b;
+      border-radius: 5px;
+      font-size: 0.75rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #174e1b;
+      margin: 50px auto 5px;
+    }
+
+    .drop-zone:hover {
+      background-color: #174e1b;
+      color: #ffffff;
+    }
+
+    .drop-zone--over {
+      border-style: solid;
+    }
+
+    .drop-zone__input {
+      display: none;
+    }
+
+    .drop-zone__thumb {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #cccccc;
+      background-size: cover;
+      position: relative;
+    }
+
+    .drop-zone__thumb::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 5px 0;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.75);
+      font-size: 5px;
+      text-align: center;
+    }
+
+    .sample-image-horizontal {
+      width: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sample-image-vertical {
+      width: 140px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sample {
+      margin: 0 auto 20px;
+      width: 230px;
+      border-width: 0px 1px 1px 1px;
+      border-color: #174e1b14;
+      border-style: solid;
+      text-align: center;
+    }
+
+    .approve-icon {
+      width: 17px;
+      vertical-align: -3px;
+    }
+
+    .note-icon {
+      width: 24px;
+      vertical-align: -8px;
+    }
+
+    .note {
+      text-align: justify;
+
+    }
+
+    .note-topic {
+      color: green;
+    }
+
+    .note-text {
+      margin-left: 2px;
+    }
+
+    button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .bottom-instruction {
+      width: 300px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+      <img class="tranzipperlogo" src="tranzipper-logo.png"> <p"text-align: center;">
+
+    <div class="main-page">
+
+      <h1>
+        Upload information
+      </h1>
+      <p class="head2">
+        Click or tap to upload documents
+      </p>
+      <div class="note">
+        <p>
+          <span class="note-topic">Note:</span> A good looking vehicle will increase your chance of being verified <img
+            class="approve-icon" src="approve-icon.png" alt="">.
+        </p>
+        <p>
+          <img class="note-icon" src="car-wash-car-washing-car-service-station-svgrepo-com.png"> <span
+            class="note-text">Make sure your vehicle is clean</span>
+        </p>
+        <p>
+          <img class="note-icon" src="camera-blur.png"> <span class="note-text">Make sure your picture is not
+            blury</span>
+        </p>
+        <p>
+          <img class="note-icon" src="license-plate-number-svgrepo-com (1).png"> <span class="note-text">Make sure your
+            plate number is very clear</span>
+        </p>
+      </div>
+
+
+      <form action="driver-upload-photo.html">
+        <div class="drop-zone">
+          <span class="drop-zone__prompt">Upload side view of vehicle</span>
+          <input type="file" name="myFile" class="drop-zone__input">
+        </div>
+        <div class="sample">
+          <p>
+            <u>Sample</u>
+          </p>
+          <img class="sample-image-horizontal" src="danfo-sideview.png" alt="Image showing side view sample">
+        </div>
+        
+
+
+        <div class="drop-zone">
+          <span class="drop-zone__prompt">Upload front view of vehicle</span>
+          <input type="file" name="myFile" class="drop-zone__input" required>
+        </div>
+        <div class="sample">
+          <p>
+            <u>Sample</u>
+          </p>
+          <img class="sample-image-vertical" src="danfo-frontview.png" alt="Image showing side view sample">
+
+        </div>
+
+
+        <div class="drop-zone">
+          <span class="drop-zone__prompt">Upload other side view of vehicle</span>
+          <input type="file" name="myFile" class="drop-zone__input">
+        </div>
+        <div class="sample">
+          <p>
+            <u>Sample</u>
+          </p>
+          <img class="sample-image-horizontal" src="danfo-other-sideview.png" alt="Image showing side view sample">
+
+        </div>
+
+
+        <div class="drop-zone">
+          <span class="drop-zone__prompt">Upload back view of vehicle</span>
+          <input type="file" name="myFile" class="drop-zone__input">
+        </div>
+        <div class="sample">
+          <p>
+            <u>Sample</u>
+          </p>
+          <img class="sample-image-vertical" src="danfo-backview.png" alt="Image showing side view sample">
+
+        </div>
+        <p class="bottom-instruction">
+          There may be a delay in our account activation if your photo doesn’t meet up with the guidelines above
+        </p>
+        <button type="submit">Upload</button>
+      </form>
+        
+        <script src="./src/main.js"></script>
+
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+
+</body>
+<script>
+  document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+    const dropZoneElement = inputElement.closest(".drop-zone");
+
+    dropZoneElement.addEventListener("click", (e) => {
+      inputElement.click();
+    });
+
+    inputElement.addEventListener("change", (e) => {
+      if (inputElement.files.length) {
+        updateThumbnail(dropZoneElement, inputElement.files[0]);
+      }
+    });
+
+    dropZoneElement.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZoneElement.classList.add("drop-zone--over");
+    });
+
+    ["dragleave", "dragend"].forEach((type) => {
+      dropZoneElement.addEventListener(type, (e) => {
+        dropZoneElement.classList.remove("drop-zone--over");
+      });
+    });
+
+    dropZoneElement.addEventListener("drop", (e) => {
+      e.preventDefault();
+
+      if (e.dataTransfer.files.length) {
+        inputElement.files = e.dataTransfer.files;
+        updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+      }
+
+      dropZoneElement.classList.remove("drop-zone--over");
+    });
+  });
+
+  /**
+   * Updates the thumbnail on a drop zone element.
+   *
+   * @param {HTMLElement} dropZoneElement
+   * @param {File} file
+   */
+  function updateThumbnail(dropZoneElement, file) {
+    let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+
+    // First time - remove the prompt
+    if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+      dropZoneElement.querySelector(".drop-zone__prompt").remove();
+    }
+
+    // First time - there is no thumbnail element, so lets create it
+    if (!thumbnailElement) {
+      thumbnailElement = document.createElement("div");
+      thumbnailElement.classList.add("drop-zone__thumb");
+      dropZoneElement.appendChild(thumbnailElement);
+    }
+
+    thumbnailElement.dataset.label = file.name;
+
+    // Show thumbnail for image files
+    if (file.type.startsWith("image/")) {
+      const reader = new FileReader();
+
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+      };
+    } else {
+      thumbnailElement.style.backgroundImage = null;
+    }
+  }
+
+</script>

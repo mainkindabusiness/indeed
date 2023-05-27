@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <link rel="stylesheet" href="w3-css.css">
+  <title> TranZipper&#8482;</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.7;
+      background-color: #c4c3ca;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main-page {
+      width: 315px;
+      margin-left: 35px;
+      font-size: 14px;
+      margin-bottom: 100px;
+    }
+
+    .tranzipperlogo {
+      width: 90px;
+      display: block;
+      margin-top: 20px;
+
+    }
+
+    .tranzipper-title {
+      font-size: 18px;
+    }
+
+    .create-button {
+      background-color: rgb(4, 80, 4);
+      color: white;
+      border: none;
+      padding: 15px 100px 15px 100px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 1s;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .create-button:hover {
+      background-color: rgb(2, 66, 2);
+    }
+
+    .create-button:active {
+      opacity: 0.7;
+    }
+
+    .signin-button {
+      background-color: white;
+      border-color: rgb(4, 80, 4);
+      border-style: solid;
+      border-width: 1px;
+      color: rgb(4, 80, 4);
+      padding: 15px 90px 15px 90px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 1s;
+      color: 1s;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .signin-button:hover {
+      background-color: rgb(4, 80, 4);
+      color: white;
+    }
+
+    .signin-button:active {
+      opacity: 0.9;
+    }
+
+    .we-connect-you {
+      width: 250px;
+      font-size: 14px;
+      color: rgb(4, 80, 4);
+      margin-bottom: 60px;
+    }
+
+    .slider {
+      width: 380px;
+      height: 300px;
+      background-color: yellow;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .image-container {
+      width: 1500px;
+      background-color: rgb(216, 216, 216);
+      height: 300px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+
+    .page {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      width: 380px;
+      border: 1px solid #ddd;
+      border-radius: 6px 0px 55px 55px;
+      background-color: rgb(216, 216, 216);
+      box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, .10);
+    }
+    a {
+      margin-bottom: 100px;
+      cursor: pointer;
+      text-decoration: none;
+      color: rgb(2, 55, 2);
+    }
+    .become {
+      margin-bottom: 100px;
+      cursor: pointer;
+    }
+.mySlides {
+  display:none;}
+  
+</style>
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <center>
+      <img class="tranzipperlogo" src="TranZipper logo.png"> <p"text-align: center;">
+      </center>  
+      <div class="main-page">
+        <center>
+        <h1 class="tranzipper-title">
+          TranZipper Ride&#8482;
+        </h1>
+
+
+        <div class="w3-content w3-display-container">
+
+          <div class="w3-display-container mySlides">
+            <img src="okada-homepage.png" style="width:100%">
+          
+
+          </div>
+          
+          <div class="w3-display-container mySlides">
+            <img src="danfo-homepage.png" style="width:100%">
+
+          </div>
+          
+          <div class="w3-display-container mySlides">
+            <img src="keke-hompage.png" style="width:100%">
+
+          </div>
+          
+          <div class="w3-display-container mySlides">
+            <img src="school-dropoff.png" style="width:100%">
+
+          </div>
+          
+          <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+          
+      
+      </div>
+
+
+
+        <h2 class="grow-your-business">
+          Seat and Relax...
+        </h2>
+        <p class="we-connect-you">
+          At the comfort of your house you can do so many things... We got you covered!!!
+        </p>
+<a href="signup-user.html">
+        <button class="create-button">
+          Create an account
+        </button>
+</a>
+<a href="login-page.html">
+        <button class="signin-button">
+          Sign in
+        </button>
+      </a>
+        <div class="become">
+        <a href="#">Be a TranZipper&#8482; today</a>
+      </div>
+  </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+
+  </center>
+
+  </div>
+
+</body>
+
+
+
+</html>

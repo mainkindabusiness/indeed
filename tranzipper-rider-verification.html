@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter code</title>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  .page {
+    height: 812px;
+    }
+
+
+
+    .btn {
+      padding: 1.25rem;
+      border: 0;
+      border-radius: 3px;
+      background-color: #4F46E5;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .segmentedInput-parent input[type="text"] {
+      height: 75px;
+      text-align: center;
+      margin: 0 5px;
+      width: 35px;
+      height: 55px;
+      text-align: center;
+      margin: 20px 5px 20px;
+      line-height: 80px;
+      font-size: 50px;
+      border: solid 1px #ccc;
+      box-shadow: 0 0 5px #ccc inset;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+      border-radius: 3px;
+    }
+
+
+    .phone-confirm,
+    .resend {
+      display: inline-block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .other-option {
+      display: block;
+    }
+    input, select {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <center>
+      <img class="tranzipperlogo" src="tranzipper-logo.png"> <p"text-align: center;">
+    </center>
+    <div class="main-page">
+
+      <h1>
+        Enter verification code
+      </h1>
+      <p> Enter the code sent to your email for confirmation</p>
+
+      <center>
+        <form action="choose-vehicle.html">
+          <input type="text" class="pin" maxlength="4" autofocus /><br />
+
+        </form>
+
+        <div class="other-option"><a class="resend" href="#"> Resend confirmation email</a></div>
+
+        <div class="other-option"><a class="phone-confirm" href="#">Confirm with phone number</a></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script type="text/javascript" src="jquery.segmentedInput.js"></script>
+        <script type="text/javascript">
+
+          $(document).ready(function () {
+            $('.pin').segmentedInput({
+              // options
+              autoSubmit: true,
+              fieldClasses: 'class1 class2'
+            });
+          });
+
+        </script>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+
+          (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        <script>
+          try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+              return true;
+            }).catch(function (e) {
+              var carbonScript = document.createElement("script");
+              carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+              carbonScript.id = "_carbonads_js";
+              document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+          } catch (error) {
+            console.log(error);
+          }
+        </script>
+    </div>

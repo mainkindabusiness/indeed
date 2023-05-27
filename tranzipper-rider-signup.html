@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TranZipper Rider&#8482; sign up</title>
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <style>
+p {
+  text-align: left;
+}
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+      <img class="tranzipperlogo" src="TranZipper logo.png"> <p"text-align: center;">
+    <div class="main-page">
+
+      <h1>
+        Create an account
+      </h1>
+      <p> Ensure you provide your legal name as it appears on your license or ID</p>
+
+        <form action="tranzipper-rider-verification.html">
+          <div class="control">
+            <input class="fname" type="text" id="name" placeholder="First Name" name="name" required>
+          </div>
+
+          <div class="control">
+            <input class="lname" type="text" id="lname" placeholder="Last Name" name="lname" required>
+          </div>
+
+          <div class="control">
+            <input class="email" type="text" id="email" placeholder="Email" name="email" required>
+          </div>
+
+          <div class="control">
+            <input id="phone" name="phone" type="tel">
+          </div>
+
+          <div class="control">
+            <input id="password" placeholder="Password" name="pword" type="password" required>
+          </div>
+
+          <div class="control">
+            <input id="password" placeholder="Confirm Password" name="pword" type="password" required>
+          </div>
+
+          <button type="submit">Sign up</button>
+
+        </form>
+
+      <p class="caution">
+        By signing up, you agree to our <a href="#">Terms of Service</a>, and <a href="#">Privacy Policy</a>
+      </p>
+
+      <p class="caution">
+        Already have an account? <a href="driver-login.html"> Log in</a>
+      </p>
+
+
+
+
+
+
+
+
+
+      <script src="build/js/intlTelInput.js"></script>
+      <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          // allowDropdown: false,
+          // autoInsertDialCode: true,
+          // autoPlaceholder: "off",
+          // dropdownContainer: document.body,
+          // excludeCountries: ["us"],
+          // formatOnDisplay: false,
+          // geoIpLookup: callback => {
+          //   fetch("http://ip-api.com/json")
+          //     .then(res => res.json())
+          //     .then(data => callback(data.countryCode))
+          //     .catch(() => callback("us"));
+          // },
+          // hiddenInput: "full_number",
+          // initialCountry: "auto",
+          // localizedCountries: { 'de': 'Deutschland' },
+          // nationalMode: false,
+          // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+          onlyCountries: [ "ng", "gh" ],
+          // placeholderNumberType: "MOBILE",
+          // preferredCountries: ['cn', 'jp'],
+          preferredCountries: [ "ng" ],
+          // separateDialCode: true,
+          utilsScript: "build/js/utils.js",
+        });
+      </script>
+
+    </div>

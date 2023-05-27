@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+    <style>
+        .wallet-balance {
+            width: 310px;
+            margin: 20px auto;
+            background-color: rgb(2, 40, 20);
+            border-radius: 7px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-weight: normal;
+            text-align: center;
+            color: #c4c3ca;
+        }
+
+        .balance {
+            font-size: 10px;
+            margin-bottom: 0;
+        }
+
+        .balance-amount {
+            margin-top: 0;
+        }
+
+
+        a {
+            color: #c4c3ca;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .recent-transaction .see-all {
+            color: green;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .recent-transaction {
+            width: 310px !important;
+        }
+
+        .wallet-history {
+            width: 310px !important;
+        }
+
+        h1,
+        h2 {
+            font-size: 17px;
+        }
+
+
+
+        .wallet-bottom {
+            display: inline-flex;
+            margin: 0 auto;
+        }
+
+        .driver-id {
+            margin-left: 100px;
+            display: block;
+        }
+
+        .driver-dp {
+            height: 35px;
+            width: 35px;
+            position: relative;
+            left: 0%;
+            vertical-align: middle;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid grey;
+            display: inline-flex;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+
+        .driver-pic {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -15px 0 0 -15px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .greetings {
+            margin: 0 auto;
+            font-size: 15px;
+            display: inline-flex;
+        }
+
+
+        .action-button {
+            display: block;
+        }
+
+
+        button {
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 30px;
+        }
+
+        .withdraw-button {
+            margin-left: 50px;
+        }
+
+        .wallet-name {
+            color: white;
+            font-size: 14px;
+        }
+
+        .recent-transaction {
+            margin-top: 10px;
+            font-size: 14px;
+            width: 320px;
+            margin: 0 auto;
+
+        }
+
+
+
+        .reason {
+            color: black;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .debit-cost {
+            float: right;
+            color: red;
+        }
+
+        .credit-cost {
+            float: right;
+            color: green;
+        }
+
+        .transaction-time {
+            margin-top: auto;
+            display: inline-block
+        }
+
+        .successful-transaction {
+            margin-top: auto;
+           float: right;
+            color: green;
+        }
+
+        .see-all {
+            float: right;
+        }
+
+        button {
+            display: inline-block;
+            width: 110px;
+            height: 30px;
+            overflow: hidden;
+            margin: 20px 20px 0;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+
+        <div class="wallet-balance">
+
+            <h1>
+                TranZipper Wallet
+            </h1>
+            <p class="balance">
+                Available Balance
+            </p>
+            <h1 class="balance-amount">
+                <a onclick="changeIcon(this)" id="myBtn">
+                    <i id="faPlus" class='bx bx-show'></i>
+                    <span class="SPN" data-text="&#8358;6&comma;582&#46;14">&#8358;6&comma;582&#46;14</span>
+                </a>
+            </h1>
+
+
+            <div>
+                <button>
+                    Fund Account
+                </button>
+                <button>
+                    Withdraw
+                </button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="recent-transaction">
+            <div>
+                RECENT ACTIVITIES
+                <a href="" class="see-all">See All</a>
+            </div>
+            <div class="wallet-history">
+                <span class="reason">
+                    Transport to Ojota
+                </span>
+                <span class="debit-cost">
+                    &#8358;250&#46;00
+                </span>
+                <div>
+                    <p class="transaction-time">
+                        2023&dash;01&dash;27
+                    </p>
+                    <p class="successful-transaction">
+                        Successful
+                    </p>
+                </div>
+
+
+
+
+                <span class="reason">
+                    Transport to Ikeja, Underbridge
+                </span>
+                <span class="debit-cost">
+                    &#8358;150&#46;00
+                </span>
+                <div>
+                    <p class="transaction-time">
+                        2023&dash;01&dash;27
+                    </p>
+                    <p class="successful-transaction">
+                        Successful
+                    </p>
+                </div>
+
+
+
+
+                <span class="reason">
+                    Transport to Ikorodu Garage
+                </span>
+                <span class="debit-cost">
+                    &#8358;200&#46;00
+                </span>
+                <div>
+                    <p class="transaction-time">
+                        2023&dash;01&dash;27
+                    </p>
+                    <p class="successful-transaction">
+                        Successful
+                    </p>
+                </div>
+
+
+
+
+                <span class="reason">
+                    Deposit from Bank
+                </span>
+                <span class="credit-cost">
+                    &#8358;7&comma;000&#46;00
+                </span>
+                <div>
+                    <p class="transaction-time">
+                        2023&dash;01&dash;27
+                    </p>
+                    <p class="successful-transaction">
+                        Successful
+                    </p>
+                </div>
+
+
+
+
+                <span class="reason">
+                    Transport to CMS
+                </span>
+                <span class="debit-cost">
+                    &#8358;400&#46;00
+                </span>
+                <div>
+                    <p class="transaction-time">
+                        2023&dash;01&dash;27
+                    </p>
+                    <p class="successful-transaction">
+                        Successful
+                    </p>
+                </div>
+
+
+
+
+                <span class="reason">
+                    Withdrawal to Bank
+                </span>
+                <span class="debit-cost">
+                    &#8358;500&#46;00
+                </span>
+                <div>
+                    <p class="transaction-time">
+                        2023&dash;01&dash;27
+                    </p>
+                    <p class="successful-transaction">
+                        Successful
+                    </p>
+                </div>
+
+
+
+
+                <span class="reason">
+                    Transport to Opebi
+                </span>
+                <span class="debit-cost">
+                    &#8358;100&#46;00
+                </span>
+                <div>
+                    <p class="transaction-time">
+                        2023&dash;01&dash;27
+                    </p>
+                    <p class="successful-transaction">
+                        Successful
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- partial:index.partial.html -->
+    <!-- partial:index.partial.html -->
+    <nav class="navigation-tab">
+        <a href="homepage.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Home</span>
+            </div>
+        </a>
+
+        <a href="passenger-requests.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="phone-call.png" alt="Requests">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Requests</span>
+            </div>
+        </a>
+
+        <a href="wallet.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="suitcase.png" alt="Wallet">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Wallet</span>
+            </div>
+        </a>
+
+        <a href="your-profile.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="user.png" alt="Profile">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Account</span>
+            </div>
+        </a>
+        <div class="navigation-tab-overlay"></div>
+    </nav>
+    <!-- partial -->
+    </span>
+
+
+    <script>
+        function changeIcon(anchor) {
+            var icon = anchor.querySelector("i");
+            icon.classList.toggle('bx-show');
+            icon.classList.toggle('bx-hide');
+            anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+        }
+    </script>
+
+
+
+    </div>
+</body>
+
+</html>

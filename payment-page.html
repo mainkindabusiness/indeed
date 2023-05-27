@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+    <style>
+        .summary-div {
+            width: 310px;
+            background-color: rgba(0, 0, 0, 0.10);
+            border-radius: 7px;
+            padding-left: 10px;
+            padding-top: 5px;
+            display: inline-block;
+            font-size: 14px;
+            margin: 0 auto 10px auto;
+        }
+
+        .trip-reason {
+            font-size: 14px;
+        }
+
+        .trip-cost,
+        .trip-passenger {
+            font-size: 14px;
+        }
+
+        .head-fees {
+            font-size: 14px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .head-cost {
+            display: inline-block;
+        }
+
+        .total-cost {
+            font-size: 25px;
+            font-weight: 500;
+            float: right;
+            display: block;
+            margin-right: 20px;
+        }
+
+        .trip-tatal-cost {
+            font-size: 20px;
+           
+        }
+
+        .wallet {
+text-align: left;
+width: 150px;
+margin: 0 auto;
+        }
+
+        select {
+            width: 150px;
+            height: 45px;
+            font-size: 12px;
+            background-color: rgba(0, 0, 0, 0.10);
+            border-radius: 5px;
+            font-weight: 400; 
+            color: #051306;
+        }
+
+        button {
+            background-color: rgb(4, 80, 4);
+            box-shadow: #1a4b02 4px 4px 0px;
+            border-radius: 4px;
+            padding:  15px 90px;
+            margin-top: 10px;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            min-width: 120px;
+            transition: transform 200ms, box-shadow 200ms;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: translateY(4px) translateX(4px);
+            box-shadow: #094c66 0px 0px 0px;
+        }
+        .warning {
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+        .warning-note {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .warning-words {
+            font-size: 12px;
+            color: crimson;
+            margin-top: 2px;
+            font-weight: 100;
+            padding: 0 0 10px;
+            width: 310px;
+        }
+        hr {
+            border-color: #c8cdc5;
+        }
+        .warning-div {
+            width: 330px;
+            margin: 0px auto;
+        }
+        .topic {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 3px;
+        }
+        .subtopic {
+            font-weight: 350;
+            line-height: 3px;
+        }
+
+        .head-text {
+      display: inline-block;
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="head-page">
+        
+        <div class="head-text">
+        <h1>
+           Payment Summary
+        </h1>
+        <p>
+            Pay now to connect with riders and view contact
+        </p>
+        </div>
+        
+        <div class="main-page"></div>
+        <div class="summary-div">
+            <div class="head-trip">
+                <p class="topic">
+                    Account Name
+                </p>
+                <p class="trip-reason">
+                    John Peter
+                </p>
+            </div>
+            <div class="head-passenger">
+                <p class="topic">
+                    Passenger&#40;s&#41;</p>
+                <p class="trip-passenger">
+                    1
+                </p>
+            <div class="head-trip">
+                <div>
+                    <p class="topic">
+                        From
+                    </p>
+                    <p class="trip-reason">
+                        Itamaga&comma;Ikorodu
+                    </p>
+                </div>
+                <div>
+                    <p class="topic">
+                        To</p>
+                    <p class="trip-reason">
+                        Agric&comma;Ikorodu
+                    </p>
+                </div>
+            </div>
+            <div class="head-cost">
+                <p class="topic">
+                    Amount
+                </p>
+                <p class="trip-cost">
+                    &#8358; 200
+                </p>
+            </div>
+            <div class="head-fees">
+                <p class="topic">
+                    Fees&#47;Baggage Fees
+                </p>
+                <p class="trip-fees">
+                    &#8358; 100
+                </p>
+                <div>
+                </div>
+            </div>
+                <hr>
+            </div>
+            <div>
+            <p class="topic"> 
+                Total 
+            </p>
+                <p>
+                    &#8358; 300
+                </p>
+            </div>
+        </div>
+        
+        <div class="wallet">
+            <label for="wallet">From TranZipper Wallet</label>
+            <select id="wallet">
+                <option value="accout">Select your wallet</option>
+                <option value="accout">&#8358; 6&comma;582</option>
+            </select>
+        </div>
+        <div class="warning-div">
+            <p class="warning-words">
+               <span class="warning-note">Note:</span> Pay securely with the TranZipper Cash Wallet only. Do not hand over cash to anyone offline. Only make payment online.
+            </p>
+
+        </div>
+        <div>
+
+                <a href="payment-successful.html"><button>
+                    PAY NOW
+                </button>
+            </a>
+
+
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

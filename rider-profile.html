@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+    <style>
+
+        h4 {
+            font-size: 16px;
+        }
+
+        .page {
+            padding-bottom: 50px;
+        }
+
+
+        .title {
+            display: inline-block;
+            padding-left: 25px;
+            font-size: 18px;
+
+        }
+
+
+        .profile-pic-div{
+            height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+    margin-top: -110px;
+}
+
+
+#photo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#file{
+    display: none;
+}
+
+#uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: #174e1b66;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+}
+        
+
+        .tripchats-unread {
+            width: 310px;
+            margin: 0 auto;
+    background-color: #174e1b;
+    border-radius: 7px 7px 0px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 104px;
+    padding-bottom: 20px;
+    display: block;
+    font-size: 11px;
+
+}
+
+        .name {
+            font-size: 15px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .time {
+            float: right;
+        }
+
+        .message {
+            margin-top: 5px;
+            color: #d1e9d1;
+        }
+
+        .top-info {
+            line-height: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+        .voice-text {
+            font-size: 10px;
+            color: rgb(255, 255, 255);
+        }
+
+       
+        
+
+
+
+        .bottom-page {
+            width: 310px;
+   margin: 0 auto;
+    display: block;
+    font-size: 14px;
+        }
+
+        .bottom-element {
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 1px;
+    font-weight: 400;
+    background-color: rgb(227, 230, 227);
+        }
+
+        .bottom-element:hover {
+            color: white;
+            background-color: rgb(0, 63, 11);
+            font-size: larger;
+        }
+
+        .bottom-element:active {
+            font-size: 13px;
+        }
+
+        .become-element {
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 1px;
+            font-weight: 400;
+            background-color: rgb(189, 253, 189);
+        }
+
+        .become-element:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            font-size: larger;
+        }
+
+        .become-element:active {
+            font-size: 16px;
+            background-color: green;
+            color: white;
+        }
+
+       
+        a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+
+        .pro-pic-div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.profile-name-info {
+  text-align: center;
+}
+.bottom-page a {
+    cursor: pointer;
+    font-weight: 400;
+    color: #051306;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div class="title">
+        </div>
+        <div class="tripchats-unread">
+            <div class="tripchat1">
+                <div class="profile-pic-div">
+                    <img src="drivers-pic.png" id="photo">
+                    <input type="file" id="file">
+                    <label class="choose" for="file" id="uploadBtn">Edit</label>
+                </div>
+                  
+                              
+
+                <div class="top-info">
+                    <div class="profile-name-info">
+                        <h4>
+                                Rasaq Sodiq
+                        </h4>
+                        <p>
+                                08055540365
+                        </p>
+                            <a href="">Refer a friend</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-page">
+            <a href="id-card.html">
+            <div class="bottom-element">
+            ID Card
+            </div>
+        </a>
+        <a href="rider-bank.html">
+            <div class="bottom-element">
+                Bank Accounts
+            </div>
+        </a>
+            <div class="bottom-element">
+                Security
+            </div>
+
+            <div class="bottom-element">
+                Safty Tips
+            </div>
+            <div class="bottom-element">
+                Talk to Us
+            </div>
+            <div class="bottom-element" >
+                Change Ride
+            </div>
+        </div>
+            <a href="become-tranzipper.html">
+            <button>
+                Log Out
+            </button>
+        </a>
+    </div>
+
+
+
+
+
+ <!-- partial:index.partial.html -->
+    <!-- partial:index.partial.html -->
+    <nav class="navigation-tab">
+        <a href="driver-homepage.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Home</span>
+            </div>
+        </a>
+
+        <a href="requests.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="phone-call.png" alt="Requests">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Requests</span>
+            </div>
+        </a>
+
+        <a href="drivers-wallet.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="suitcase.png" alt="Wallet">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Wallet</span>
+            </div>
+        </a>
+
+        <a href="rider-profile.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="user.png" alt="Profile">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Account</span>
+            </div>
+        </a>
+        <div class="navigation-tab-overlay"></div>
+    </nav>
+    <!-- partial -->
+    </span>
+
+
+<script>
+    function changeIcon(anchor) {
+        var icon = anchor.querySelector("i");
+        icon.classList.toggle('bx-show');
+        icon.classList.toggle('bx-hide');
+        anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+    }
+</script>
+</div>
+
+
+    </div>
+    <script src="app.js"></script> 
+</body>
+
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  <title>Successful</title>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+  <style>
+    .page {
+      padding-top: 20px;
+      padding-bottom: 0px;
+    }
+
+    .main-page {
+      margin-bottom: 50px;
+    }
+
+
+
+    i {
+      color: #174e1b;
+      font-size: 100px;
+      line-height: 100px;
+      margin-left: -15px;
+    }
+
+    .card {
+      background: white;
+      padding: 60px;
+      border-radius: 4px;
+      box-shadow: 0 2px 3px #C8D0D8;
+      display: inline-block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .word {
+      display: inline-block;
+    }
+
+    .meaning {
+      display: inline-block;
+    }
+
+    .drivers-infomation {
+      margin: 40px 40px 0;
+      text-align: left;
+
+    }
+
+    .instruction {
+      color: #404F5E;
+      width: 330px;
+      font-size: 14px;
+    }
+
+    h2 {
+      color: #58616b;
+      margin-bottom: 0;
+    }
+
+    button {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #18181a;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 15px;
+      line-height: 15px;
+      padding: 15px 90px;
+      text-decoration: none;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin-bottom: 10px;
+      margin-top: 50px;
+    }
+
+    button span:first-child {
+      position: relative;
+      transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+      z-index: 10;
+    }
+
+    button span:last-child {
+      color: white;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+      z-index: 100;
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      transform: translateY(225%) translateX(-50%);
+      height: 14px;
+      line-height: 13px;
+    }
+
+    button:after {
+      content: "";
+      position: absolute;
+      bottom: -50%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      transform-origin: bottom center;
+      transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+      transform: skewY(9.3deg) scaleY(0);
+      z-index: 50;
+    }
+
+    button:hover:after {
+      transform-origin: bottom center;
+      transform: skewY(9.3deg) scaleY(2);
+    }
+
+    button:hover span:last-child {
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 1;
+      transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+    }
+
+    h1 {
+      color: #174e1b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="main-page">
+
+      <div style="border-radius:200px; height:80px; width:200px; margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+      <h1>Success</h1>
+      <p>We received your payment&#59;<br> you have successfully booked your ride&#33;</p>
+
+      <div class="drivers-infomation">
+        <h2>
+          Driver&#39;s Infomation
+        </h2>
+        <div class="drivers-name">
+          <p class="word">
+            Name&#58;
+          </p>
+          <p class="meaning">
+            Rasaq Sodiq
+          </p>
+        </div>
+        <div class="drivers-number">
+          <p class="word">
+            Phone Number&#58;
+          </p>
+          <p class="meaning">
+            <a href="tel:08055540365">08055540365</a>
+          </p>
+        </div>
+        <div class="drivers-id">
+          <p class="word">
+            Driver ID&#58;
+          </p>
+          <p class="meaning">
+            &#35;22381
+          </p>
+        </div>
+      </div>
+      <center>
+        <div>
+          <a href="homepage.html"><button><span class="text">Dismiss</span><span>Thanks!</span>
+            </button>
+          </a>
+        </div>
+        <div class="caution">
+          Call your Driver now or wait a few seconds for driver to contact you, discuss on your meeting point and time
+          frame
+        </div>
+      </center>
+    </div>
+  </div>
+</body>
+
+</html>

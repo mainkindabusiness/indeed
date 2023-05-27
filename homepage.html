@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+    <style>
+        .profile-pic {
+            width: 40px;
+            border-radius: 20px;
+            vertical-align: middle;
+
+        }
+
+        .profile-pic-div {
+            display: inline-flex;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+
+        .profile-pic-div:hover {
+            border: 2px solid #8daf9082;
+            border-radius: 20px;
+            outline: none;
+            background-color: #fff;
+            box-shadow: 0 0 0 4px #d1dfd2;
+        }
+
+        .greeting-text {
+            display: inline-flex;
+            margin-left: 5px;
+        }
+
+
+ 
+
+        .icon {
+            display: block;
+            background-color: #687d6a;
+            height: 100px;
+            cursor: pointer;
+            border-radius: 7px;
+            padding-bottom: 105px;
+            color: #c4c3ca;
+        }
+
+        .icon:hover {
+            background-color: #174e1b;
+            color: aliceblue;
+            outline: none;
+            box-shadow: 0 0 0 4px #d1dfd2;
+        }
+
+        .icon:active {
+            opacity: 0.7;
+        }
+
+        .iconimg {
+            width: 100px;
+            float: right;
+        }
+        .icon-image-div {
+            padding-right: 5px;
+        }
+
+        .icon-text-div {
+            padding-left: 5px;
+            padding-bottom: 0;
+        }
+
+        .icon-parent {
+            margin-bottom: 0px;
+        }
+
+        .icon p {
+            margin: 10 px;
+        }
+
+        .search {
+            margin-bottom: 20px;
+        }
+
+        .input {
+            width: 100%;
+            height: 34px;
+            line-height: 28px;
+            padding: 0 1rem;
+            padding-left: 2.5rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            outline: none;
+            background-color: #f3f3f4;
+            color: #0d0c22;
+            transition: .3s ease;
+        }
+
+        .input::placeholder {
+            color: #9e9ea7;
+        }
+
+        .input:focus,
+        input:hover {
+            outline: none;
+            border-color: #8daf9082;
+            background-color: #fff;
+            box-shadow: 0 0 0 4px #d1dfd2;
+        }
+
+        .search-icon {
+            position: absolute;
+            fill: #626262;
+            width: 30px;
+            padding-left: 10px;
+            padding-top: 7px;
+        }
+
+
+
+        .navigation-tab___icon {
+            cursor: pointer;
+        }
+        a {
+            text-align: justify;
+            color: #051306;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="head-page">
+
+        
+        
+            <div class="greeting">
+                <div class="profile-pic-div">
+                    <a href="your-profile.html"><img class="profile-pic" src="profile-pic.png"></a>
+                </div>
+                <div class="greeting-text">
+                    <p>
+                        Hello John
+                    </p>
+                </div>
+            </div>
+
+            <h3>
+                Our Services
+            </h3>
+        </div>
+            <div class="main-page">
+            <div class="search">
+                <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                    </g>
+                </svg>
+                <input placeholder="Where are you going today&#63;" type="search" class="input">
+            </div>
+
+
+            <a href="start-your-trip.html">
+                <div class="icon-parent">
+                    <div class="icon">
+                        <div class="icon-text-div">
+                        <p>
+                            Okada &#40;Motorcycle&#41;
+                        </p>
+                        </div>
+                        <div class="icon-image-div">
+                        <img class="iconimg" src="Bike.png" alt="Okada">
+                    </div>
+                    </div>
+
+                            <div class="icon">
+                                <div class="icon-text-div">
+                                <p>
+                                    Keke Maruwa &#40;Tricycle&#41;
+                                </p>
+                                </div>
+                                <div class="icon-image-div">
+                                    <img class="iconimg" src="Keke.png" alt="Keke">
+                            </div>
+                            </div>
+
+                            <div class="icon">
+                                <div class="icon-text-div">
+                                <p>
+                                   Car Ride
+                                </p>
+                                </div>
+                                <div class="icon-image-div">
+                                    <img class="iconimg" src="car ride.png" alt="Keke">
+                            </div>
+                            </div>
+
+                            <div class="icon">
+                                <div class="icon-text-div">
+                                <p>
+                                    Korope &#40;Mini&dash;Bus&#41;
+                                </p>
+                                </div>
+                                <div class="icon-image-div">
+                                    <img class="iconimg" src="Korope.png" alt="Korope">
+                            </div>
+                            </div>
+
+                            
+                            <div class="icon">
+                                <div class="icon-text-div">
+                                <p>
+                                    Danfo &#40;Bus&#41;
+                                </p>
+                                </div>
+                                <div class="icon-image-div">
+                                    <img class="iconimg" src="Danfo ride.png" alt="Danfo">
+                            </div>
+                            </div>
+
+
+                            <div class="icon">
+                                <div class="icon-text-div">
+                                <p>
+                                    Schedule for Pick&dash;up&#47;Drop&dash;off
+                                </p>
+                                </div>
+                                <div class="icon-image-div">
+                                    <img class="iconimg" src="Pickup.png" alt="Schedule">
+                            </div>
+                            </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+
+ 
+
+
+<!-- partial:index.partial.html -->
+ <!-- partial:index.partial.html -->
+ <nav class="navigation-tab">
+    <a href="homepage.html">
+        <div class="navigation-tab-item active">
+            <span class="navigation-tab___icon">
+                <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+            </span>
+            <span class="navigation-tab___icon">
+                <span class="navigation-tab_txt">Home</span>
+        </div>
+    </a>
+
+    <a href="passenger-requests.html">
+        <div class="navigation-tab-item active">
+            <span class="navigation-tab___icon">
+                <img class="img-nav" src="phone-call.png" alt="Requests">
+            </span>
+            <span class="navigation-tab___icon">
+                <span class="navigation-tab_txt">Requests</span>
+        </div>
+    </a>
+
+    <a href="wallet.html">
+        <div class="navigation-tab-item active">
+            <span class="navigation-tab___icon">
+                <img class="img-nav" src="suitcase.png" alt="Wallet">
+            </span>
+            <span class="navigation-tab___icon">
+                <span class="navigation-tab_txt">Wallet</span>
+        </div>
+    </a>
+
+    <a href="your-profile.html">
+        <div class="navigation-tab-item active">
+            <span class="navigation-tab___icon">
+                <img class="img-nav" src="user.png" alt="Profile">
+            </span>
+            <span class="navigation-tab___icon">
+                <span class="navigation-tab_txt">Account</span>
+        </div>
+    </a>
+    <div class="navigation-tab-overlay"></div>
+</nav>
+<!-- partial -->
+</span>
+
+
+
+        <script>
+            function changeIcon(anchor) {
+                var icon = anchor.querySelector("i");
+                icon.classList.toggle('bx-show');
+                icon.classList.toggle('bx-hide');
+                anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+            }
+        </script>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

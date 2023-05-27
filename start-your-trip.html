@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start your trip</title>
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+<link rel="website icon" type="png" href="TranZipper Logo.png">
+<link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+  <style>
+    
+    .page {
+      height: 812px;
+    }
+
+    .control, select {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      display: block;
+    }
+
+
+    .form-info {
+      margin-top: 0;
+      font-size: 11px;
+      font-weight: 100;
+      font-style: italic;
+    }
+    h1 {
+      display: inline-block;
+    }
+    .head-text {
+      display: inline-block;
+margin: 0 25px;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="head-page">
+    <a href="homepage.html">
+      <div class="back-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="29"
+          viewBox="0 0 256 256" xml:space="preserve">
+
+          <defs>
+          </defs>
+          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+            <path
+              d="M 45 0 c 24.813 0 45 20.187 45 45 c 0 24.813 -20.187 45 -45 45 C 20.186 90 0 69.813 0 45 C 0 20.187 20.186 0 45 0 z M 51.263 73.4 l 8.6 -8.6 L 40.064 45 l 19.799 -19.799 l -8.6 -8.6 L 22.864 45 L 51.263 73.4 z"
+              style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-rule: nonzero; opacity: 1;"
+              transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+          </g>
+        </svg>
+        </a>
+      </div>
+      <div class="head-text">
+    <h1>
+      Start your trip
+    </h1>
+  </div>
+</div>
+
+    <div class="main-page">
+
+      
+        <form action="list-of-riders.html">
+          <div class="control">
+            <input class="city" type="text" id="address" placeholder="Bustop near to you" name="address" required> 
+            <p class="form-info">Please input the nearest Bustop to you</p>
+          </div>
+
+          <div class="control">
+            <input class="city" type="text" id="address" placeholder="Destination bustop" name="address" required>
+            <p class="form-info">Please input the closest Bustop to your destination</p>
+          </div>
+
+          <select id="numbofpassangers" name="numbofpassangers" required>
+            <option value="select">Select numbers of passangers</option>
+            <option value="Chartter">Chatter a ride</option>
+            <option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+            <option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+    
+
+        <select id="numbofbags" name="numbofbags" required>
+            <option value="select">Select numbers of bags/loads</option>
+            <option value="nobags">No bags</option>
+            <option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+            <option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+
+          <button type="submit">Search </button>
+
+        </form>
+    </div>
+  </div>
+
+
+
+
+
+<!-- partial:index.partial.html -->
+ <!-- partial:index.partial.html -->
+ <nav class="navigation-tab">
+  <a href="homepage.html">
+      <div class="navigation-tab-item active">
+          <span class="navigation-tab___icon">
+              <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+          </span>
+          <span class="navigation-tab___icon">
+              <span class="navigation-tab_txt">Home</span>
+      </div>
+  </a>
+
+  <a href="passenger-requests.html">
+      <div class="navigation-tab-item active">
+          <span class="navigation-tab___icon">
+              <img class="img-nav" src="phone-call.png" alt="Requests">
+          </span>
+          <span class="navigation-tab___icon">
+              <span class="navigation-tab_txt">Requests</span>
+      </div>
+  </a>
+
+  <a href="wallet.html">
+      <div class="navigation-tab-item active">
+          <span class="navigation-tab___icon">
+              <img class="img-nav" src="suitcase.png" alt="Wallet">
+          </span>
+          <span class="navigation-tab___icon">
+              <span class="navigation-tab_txt">Wallet</span>
+      </div>
+  </a>
+
+  <a href="your-profile.html">
+      <div class="navigation-tab-item active">
+          <span class="navigation-tab___icon">
+              <img class="img-nav" src="user.png" alt="Profile">
+          </span>
+          <span class="navigation-tab___icon">
+              <span class="navigation-tab_txt">Account</span>
+      </div>
+  </a>
+  <div class="navigation-tab-overlay"></div>
+</nav>
+<!-- partial -->
+</span>
+
+
+      <script>
+          function changeIcon(anchor) {
+              var icon = anchor.querySelector("i");
+              icon.classList.toggle('bx-show');
+              icon.classList.toggle('bx-hide');
+              anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+          }
+      </script>
+
+
+
+  </div>
+
+
+
+  </body>
+
+  </html>

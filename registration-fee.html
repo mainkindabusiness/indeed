@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter code</title>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+ .page {
+  height: 812px;
+ }
+    .fee-topic {
+      color: green; 
+      margin-right: 50px;  
+      
+}
+p {
+  text-align: left;
+}
+
+    .fee-cost {
+      color: green;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+
+    .note-text {
+      margin-left: 2px;
+      
+    }
+
+    button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <center>
+      <img class="tranzipperlogo" src="tranzipper-logo.png"> <p"text-align: center;">
+    </center>
+    <div class="main-page">
+
+      <h1>
+        Rider one-time registration
+      </h1>
+      <p>
+        We charge a one-time registration fee to help us keep our platform safe and provide best services to you      </p>
+      <div class="note">
+        <p class="fee-cost">
+          <span class="fee-topic">Rider Registration fee</span>&#8358;5,000.00
+        </p>
+        <p>
+          While this fee is non-refundable, we anticipate you can make this fund back in no time
+        </p>
+        
+    </div>
+    <a href="driver-payment.html">
+    <button>Continue</button>
+  </a>
+    </form>
+
+
+  </div>
+
+  </div>
+
+</body>
+<script>
+  document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+    const dropZoneElement = inputElement.closest(".drop-zone");
+
+    dropZoneElement.addEventListener("click", (e) => {
+      inputElement.click();
+    });
+
+    inputElement.addEventListener("change", (e) => {
+      if (inputElement.files.length) {
+        updateThumbnail(dropZoneElement, inputElement.files[0]);
+      }
+    });
+
+    dropZoneElement.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZoneElement.classList.add("drop-zone--over");
+    });
+
+    ["dragleave", "dragend"].forEach((type) => {
+      dropZoneElement.addEventListener(type, (e) => {
+        dropZoneElement.classList.remove("drop-zone--over");
+      });
+    });
+
+    dropZoneElement.addEventListener("drop", (e) => {
+      e.preventDefault();
+
+      if (e.dataTransfer.files.length) {
+        inputElement.files = e.dataTransfer.files;
+        updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+      }
+
+      dropZoneElement.classList.remove("drop-zone--over");
+    });
+  });
+
+  /**
+   * Updates the thumbnail on a drop zone element.
+   *
+   * @param {HTMLElement} dropZoneElement
+   * @param {File} file
+   */
+  function updateThumbnail(dropZoneElement, file) {
+    let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+
+    // First time - remove the prompt
+    if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+      dropZoneElement.querySelector(".drop-zone__prompt").remove();
+    }
+
+    // First time - there is no thumbnail element, so lets create it
+    if (!thumbnailElement) {
+      thumbnailElement = document.createElement("div");
+      thumbnailElement.classList.add("drop-zone__thumb");
+      dropZoneElement.appendChild(thumbnailElement);
+    }
+
+    thumbnailElement.dataset.label = file.name;
+
+    // Show thumbnail for image files
+    if (file.type.startsWith("image/")) {
+      const reader = new FileReader();
+
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+      };
+    } else {
+      thumbnailElement.style.backgroundImage = null;
+    }
+  }
+
+</script>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+
+    <style>
+                .greeting-text {
+            display: inline-flex;
+            margin-left: 5px;
+        }
+        .profile-pic {
+    width: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+    height: 40px;
+    object-fit: cover;
+}
+        .wallet-balance {
+            width: 310px;
+            margin: 0 auto;
+            background-color: rgb(2, 40, 20);
+            border-radius: 7px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: normal;
+            text-align: center;
+            color: #c4c3ca;
+            margin-top: 20px;
+        }
+
+        .balance {
+            font-size: 10px;
+            margin-bottom: 0;
+        }
+
+        .balance-amount {
+            margin-top: 0;
+            display: block;
+            text-align: center;
+        }
+
+        .icon-list {
+            display: inline-flex;
+            margin: 0 auto;
+        }
+
+        .shortcut {
+            display: inline-flex;
+            margin: 0 0px;
+        }
+
+        .shortcut-div {
+            font-size: 10px;
+            margin: 0 auto;
+            width: 310px;
+        }
+
+        .icon-des {
+            width: 110px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .analysis-head {
+            width: 130px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 10px;
+            color: #c4c3ca;
+        }
+
+        .analysis {
+            width: 110px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 50px;
+            color: #c4c3ca;
+        }
+
+        .icon {
+
+            background-color: #174e1b;
+            width: 145px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 15px;
+            padding-bottom: 10px;
+
+        }
+
+        .icon:hover {
+            background-color: rgb(2, 62, 2);
+            color: rgb(182, 223, 182);
+        }
+
+        .icon:active {
+            opacity: 0.7;
+        }
+
+        .iconimg {
+            width: 61px;
+            position: inherit;
+            top: 50%;
+            left: 50%;
+            margin: 20px 0 0 50px;
+        }
+
+        .icon-parent {
+            margin-bottom: 0px;
+        }
+
+
+
+        h3 {
+            margin-left: 25px;
+            font-weight: normal;
+            margin-bottom: 5px;
+            margin-top: 30px;
+        }
+
+
+        a {
+            color: #c4c3ca;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        h1,
+        h2 {
+            font-size: 17px;
+        }
+
+        .switch {
+            display: block;
+            background-color: black;
+            width: 150px;
+            height: 195px;
+            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2), 0 0 1px 2px black, inset 0 2px 2px -2px white, inset 0 0 2px 15px #47434c, inset 0 0 2px 22px black;
+            border-radius: 5px;
+            padding: 20px;
+            perspective: 700px;
+            margin: 25px auto;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .switch input:checked+.button {
+            transform: translateZ(20px) rotateX(25deg);
+            box-shadow: 0 -10px 20px #ff1818;
+        }
+
+        .switch input:checked+.button .light {
+            animation: flicker 0.2s infinite 0.3s;
+
+        }
+        
+
+        .switch input:checked+.button .shine {
+            opacity: 1;
+        }
+
+        .switch input:checked+.button .shadow {
+            opacity: 0;
+        }
+        .shadow {
+            color: white;
+
+        }
+
+        .switch .button {
+            display: block;
+            transition: all 0.3s cubic-bezier(1, 0, 1, 1);
+            transform-origin: center center -20px;
+            transform: translateZ(20px) rotateX(-25deg);
+            transform-style: preserve-3d;
+            background-color: #9b0621;
+            height: 100%;
+            position: relative;
+            cursor: pointer;
+            background: linear-gradient(#980000 0%, #6f0000 30%, #6f0000 70%, #980000 100%);
+            background-repeat: no-repeat;
+        }
+
+        .switch .button::before {
+            content: "";
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 50px;
+            transform-origin: top;
+            transform: rotateX(-90deg);
+            position: absolute;
+            top: 0;
+        }
+
+        .switch .button::after {
+            content: "";
+            background-image: linear-gradient(#650000, #320000);
+            width: 100%;
+            height: 50px;
+            transform-origin: top;
+            transform: translateY(50px) rotateX(-90deg);
+            position: absolute;
+            bottom: 0;
+            box-shadow: 0 50px 8px 0px black, 0 80px 20px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .switch .light {
+            opacity: 0;
+            animation: light-off 1s;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(#ffc97e, #ff1818 40%, transparent 70%);
+        }
+
+        .switch .dots {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(transparent 30%, rgba(101, 0, 0, 0.7) 70%);
+            background-size: 10px 10px;
+            color: white;
+        }
+
+        .switch .characters {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(white, white) 50% 20%/5% 20%, radial-gradient(circle, transparent 50%, white 52%, white 70%, transparent 72%) 50% 80%/33% 25%;
+            background-repeat: no-repeat;
+        }
+
+        .switch .shine {
+            transition: all 0.3s cubic-bezier(1, 0, 1, 1);
+            opacity: 0.3;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(white, transparent 3%) 50% 50%/97% 97%, linear-gradient(rgba(255, 255, 255, 0.5), transparent 50%, transparent 80%, rgba(255, 255, 255, 0.5)) 50% 50%/97% 97%;
+            background-repeat: no-repeat;
+        }
+
+        .switch .shadow {
+            transition: all 0.3s cubic-bezier(1, 0, 1, 1);
+            opacity: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(transparent 70%, rgba(0, 0, 0, 0.8));
+            background-repeat: no-repeat;
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes light-off {
+            0% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 0;
+            }
+        }
+
+        .wallet-bottom {
+            display: inline-flex;
+            margin: 0 auto;
+        }
+
+        .driver-id {
+            margin-left: 100px;
+        }
+
+        .profile-pic {
+            width: 40px;
+            border-radius: 20px;
+            vertical-align: middle;
+
+        }
+
+        .profile-pic-div {
+            display: inline-flex;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+
+        .profile-pic-div:hover {
+            border: 2px solid #8daf9082;
+            border-radius: 20px;
+            outline: none;
+            background-color: #fff;
+            box-shadow: 0 0 0 4px #d1dfd2;
+        }
+
+        .greeting-text {
+            display: inline-flex;
+            margin-left: 5px;
+        }
+
+        .icon-left {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+
+        <div class="head-page">
+
+        
+        
+            <div class="greeting">
+                <div class="profile-pic-div">
+                    <a href="rider-profile.html"><img class="profile-pic" src="drivers-pic.png"></a>
+                </div>
+                <div class="greeting-text">
+                    <p>
+                        Hello John
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="wallet-balance">
+
+            <h1>
+                TranZipper Wallet
+                </h2>
+                <p class="balance">
+                    Available Balance
+                </p>
+                <h1 class="balance-amount">
+                    <a onclick="changeIcon(this)" id="myBtn">
+                        <i id="faPlus" class='bx bx-show'></i>
+                        <span class="SPN" data-text="&#8358;59&comma;582&#46;14">&#8358;59&comma;582&#46;14</span>
+                    </a>
+                </h1>
+
+                <div class="wallet-bottom">
+                    <div>
+                        <p class="balance">
+                            Status
+                        </p>
+
+                        <p class="balance-amount">
+                            Active
+                        </p>
+                    </div>
+
+                    <div class="driver-id">
+                        <p class="balance">
+                            Driver ID
+                        </p>
+                        <p class="balance-amount">
+                            #22381
+                        </p>
+                    </div>
+                </div>
+
+        </div>
+
+        <h3>
+            Availability
+        </h3>
+        <div>
+            <label class="switch">
+                <input checked="checked" type="checkbox">
+                <div class="button">
+                    <div class="light"></div>
+                    <div class="dots">You are Online</div>
+                    <div class="characters"></div>
+                    <div class="shine"></div>
+                    <div class="shadow">You are Offline</div>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <h3>
+                Quick Action
+            </h3>
+            <div class="shortcut-div">
+                <div class="shortcut">
+                    
+                        <div class="icon-left">
+                            <a href="profile-voice.html">
+                            <div class="icon">
+                                <img class="iconimg" src="voice-recognition.png" alt="Edit Profile Voice">
+                                <div class="icon-des">
+                                    <p>
+                                        Create/edit profile voice
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+        
+
+
+
+            <div>
+                <div class="icon">
+                    <a href="change-bustop.html">
+                    <img class="iconimg" src="car-park.png" alt="">
+                    <div class="icon-des">
+                        <p>
+                            Create/edit bustop
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+    <div class="shortcut">
+        
+            <div class="icon-left">
+                <a href="change-price.html">
+                <div class="icon">
+                    <img class="iconimg" src="price.png" alt="">
+                    <div class="icon-des">
+                        <p>
+                            Create/edit your prices
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+
+
+    <a
+        onclick="alert('We have sent a notification to your recent passagers. You can only send a notification at a time.')">
+        <div>
+            <div class="icon">
+                <img class="iconimg" src="customer-review.png" alt="">
+                <div class="icon-des">
+                    <p>
+                        Request for review
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+    </div>
+    
+
+
+    <div class="shortcut">
+        <div class="icon-left">
+            <div class="icon">
+                <img class="iconimg" src="renko.png" alt="">
+                <div class="analysis-head">
+                    <p>
+                        Numbers of requested Ride
+                    </p>
+                </div>
+                <div class="analysis">
+                    12
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="icon">
+                <img class="iconimg" src="deleted.png" alt="">
+                <div class="analysis-head">
+                    <p>
+                        Numbers of missed requests
+                    </p>
+                </div>
+                <div class="analysis">
+                    1
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+    <!-- partial:index.partial.html -->
+    <!-- partial:index.partial.html -->
+    <nav class="navigation-tab">
+        <a href="driver-homepage.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Home</span>
+            </div>
+        </a>
+
+        <a href="requests.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="phone-call.png" alt="Requests">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Requests</span>
+            </div>
+        </a>
+
+        <a href="drivers-wallet.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="suitcase.png" alt="Wallet">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Wallet</span>
+            </div>
+        </a>
+
+        <a href="rider-profile.html">
+            <div class="navigation-tab-item active">
+                <span class="navigation-tab___icon">
+                    <img class="img-nav" src="user.png" alt="Profile">
+                </span>
+                <span class="navigation-tab___icon">
+                    <span class="navigation-tab_txt">Account</span>
+            </div>
+        </a>
+        <div class="navigation-tab-overlay"></div>
+    </nav>
+    <!-- partial -->
+    </span>
+
+
+
+    <script>
+        function changeIcon(anchor) {
+            var icon = anchor.querySelector("i");
+            icon.classList.toggle('bx-show');
+            icon.classList.toggle('bx-hide');
+            anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+        }
+    </script>
+
+
+
+    </div>
+</body>
+
+</html>

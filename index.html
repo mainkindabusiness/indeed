@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to TranZipper Rider&#8482;</title>
+  <link rel="website icon" type="png" href="TranZipper Logo.png">
+  <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    margin: 0px 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 600px;
+    margin-right: 0px;
+    box-sizing: border-box;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+  }
+
+  .slide__text {
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  .slide-words {
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 250px;
+    margin: 0 auto;
+    color: rgb(4, 80, 4);
+  }
+
+  .slide a {
+    background: none;
+    border: none;
+  }
+
+  a.slide__prev,
+  .slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+  }
+
+  a.slide__next,
+  .slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+  }
+
+
+
+  .slider::before,
+  .slider::after {
+    content: '';
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+  }
+
+  .slider__nav {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+  }
+
+  .slider__navlink {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.815);
+    margin: 0 10px 0 10px;
+  }
+
+  .slide-image {
+    width: 250px;
+    border-radius: 2px;
+  }
+
+
+</style>
+
+<body>
+  <div class="page">
+    <center>
+      <img class="tranzipperlogo" src="TranZipper logo.png"> <p"text-align: center;">
+    </center>
+    <div class="main-page">
+      <p class="tranzipper-title">
+        TranZipper Ride&#8482;
+      </p>
+    </div>
+
+
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slides">
+          <div id="slides__1" class="slide">
+            <span class="slide__text">
+              <img class="slide-image" src="bike-hp.png" alt="">
+              <p>
+                Affordable, urgent and safe ride
+              </p>
+              <p class="slide-words">
+                Book the TranZipper&#8482; Okada riders to have a beautiful experience of swift response.
+              </p>
+
+            </span>
+            <a class="slide__prev" href="#slides__4" title="Next"></a>
+            <a class="slide__next" href="#slides__2" title="Next"></a>
+          </div>
+          <div id="slides__2" class="slide">
+            <span class="slide__text">
+              <img class="slide-image" src="danfo-hp.png" alt="">
+              <p>
+                Fast and safe group ride
+              </p>
+              <p class="slide-words">
+                Get a different experience from our public bus drivers. Charter or book for a space now!
+              </p>
+            </span>
+            <a class="slide__prev" href="#slides__1" title="Prev"></a>
+            <a class="slide__next" href="#slides__3" title="Next"></a>
+          </div>
+          <div id="slides__3" class="slide">
+            <span class="slide__text">
+              <img class="slide-image" src="korope-hp.png" alt="">
+              <p>
+                Comfort, affordable and safe 
+              </p>
+              <p class="slide-words">
+                Charter or book for a space now... Now worries, space will fill up in no time...
+              </p>
+            </span>
+            <a class="slide__prev" href="#slides__2" title="Prev"></a>
+            <a class="slide__next" href="#slides__4" title="Next"></a>
+          </div>
+          <div id="slides__4" class="slide">
+            <span class="slide__text">
+              <img class="slide-image" src="digital-carpack.png" alt="">
+              <p>
+                Digital car park
+              </p>
+              <p class="slide-words">
+                Welcome to TranZipper Ride&#8482;, the first ever digital transportation that connects you to the real world transportation.
+              </p>
+
+
+
+              <div class="control-button">
+              <a href="signup-user.html">
+                <button class="green-button">
+                  Create an account
+                </button>
+              </a>
+              <a href="login-page.html">
+                <button class="white-button">
+                  Sign in
+                </button>
+              </a>
+              <a href="become-tranzipper.html">Be a TranZipper&#8482; today</a>
+            </div>
+
+
+
+            </span>
+            <a class="slide__prev" href="#slides__3" title="Prev"></a>
+            <a class="slide__next" href="#slides__1" title="Prev"></a>
+          </div>
+        </div>
+        <div class="slider__nav">
+          <a class="slider__navlink" href="#slides__1"></a>
+          <a class="slider__navlink" href="#slides__2"></a>
+          <a class="slider__navlink" href="#slides__3"></a>
+          <a class="slider__navlink" href="#slides__4"></a>
+        </div>
+
+
+
+
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

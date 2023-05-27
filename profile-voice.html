@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="website icon" type="png" href="TranZipper Logo.png">
+    <link rel="stylesheet" href="manage-audio.css">
+    <link href="/css/tranzipper.css" rel="stylesheet" type="text/css">
+    <style>
+        p.lead {
+            font-size: 18px;
+            text-align: center;
+        }
+
+
+        .current-head {
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        .current {
+            height: 37px;
+            padding: 6px 12px;
+            width: 250px;
+            background-color: #ddddddb5;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 100%;
+            color: rgb(118, 118, 118);
+            border-color: black;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #9dafa6;
+            border: none;
+            box-shadow: none;
+            color: rgb(118, 118, 118);
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <div>
+            <div class="jquery-script-center">
+
+            </div>
+        </div>
+        <div>
+            <img class="logo" src="voice-recognition.png" alt="">
+        </div>
+        <p class="lead">Record your Voice Profile</p>
+        <div class="current-div">
+            <p class="current-head">Current Prifile Voice</p>
+            <audio controls autoplay class="current" controls="true">
+                <source src="Profile Voice 1.mp3" type="audio/ogg">
+                <source src="Profile Voice 1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-record">
+            <button id="recordButton">Start Recording</button>
+            <button id="stopButton" class="inactive">Stop</button>
+        </div>
+
+        <div class="playback">
+            <audio src="" controls id="audio-playback" class="hidden"></audio>
+        </div>
+
+        <div class="download">
+            <button
+                onclick="alert('Your Voice profile is under review... You will get a notification when review is done')"
+                class="hidden" id="downloadContainer">
+                <a href="driver-homepage.html">Update</a>
+            </button>
+        </div>
+        <div class="recorder-instructions">
+            <div class="step-1A">
+                <h2>Step 1</h2>
+                <p>Press the Record Button </p>
+            </div>
+
+            <div class="step-2A">
+                <h2>Step 2</h2>
+                <p>Allow Microphone Access &amp; Start Talking</p>
+            </div>
+
+            <div class="step-3A">
+                <h2>Step 3</h2>
+                <p>Stop Recording</p>
+            </div>
+
+            <div class="step-4A">
+                <h2>Step 4</h2>
+                <p>Preview your Recording or Try Again</p>
+            </div>
+
+            <div class="step-5A">
+                <h2>Step 5</h2>
+                <p> Click Confirm to submit your Voice Profile</p>
+            </div>
+            <p style="text-align: center;">Your new Voice Profile will be reviewed</p>
+        </div>
+    </div>
+
+        <script src="manage-audio.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script>
+            try {
+                fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                    return true;
+                }).catch(function (e) {
+                    var carbonScript = document.createElement("script");
+                    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                    carbonScript.id = "_carbonads_js";
+                    document.getElementById("carbon-block").appendChild(carbonScript);
+                });
+            } catch (error) {
+                console.log(error);
+            }
+        </script>
+
+
+
+
+
+        <!-- partial:index.partial.html -->
+        <!-- partial:index.partial.html -->
+        <nav class="navigation-tab">
+            <a href="driver-homepage.html">
+                <div class="navigation-tab-item active">
+                    <span class="navigation-tab___icon">
+                        <img class="img-nav" src="home.png" alt="Home" style="margin: 0 auto;">
+                    </span>
+                    <span class="navigation-tab___icon">
+                        <span class="navigation-tab_txt">Home</span>
+                </div>
+            </a>
+
+            <a href="requests.html">
+                <div class="navigation-tab-item active">
+                    <span class="navigation-tab___icon">
+                        <img class="img-nav" src="phone-call.png" alt="Requests">
+                    </span>
+                    <span class="navigation-tab___icon">
+                        <span class="navigation-tab_txt">Requests</span>
+                </div>
+            </a>
+
+            <a href="drivers-wallet.html">
+                <div class="navigation-tab-item active">
+                    <span class="navigation-tab___icon">
+                        <img class="img-nav" src="suitcase.png" alt="Wallet">
+                    </span>
+                    <span class="navigation-tab___icon">
+                        <span class="navigation-tab_txt">Wallet</span>
+                </div>
+            </a>
+
+            <a href="rider-profile.html">
+                <div class="navigation-tab-item active">
+                    <span class="navigation-tab___icon">
+                        <img class="img-nav" src="user.png" alt="Profile">
+                    </span>
+                    <span class="navigation-tab___icon">
+                        <span class="navigation-tab_txt">Account</span>
+                </div>
+            </a>
+            <div class="navigation-tab-overlay"></div>
+        </nav>
+        <!-- partial -->
+        </span>
+
+
+        <script>
+            function changeIcon(anchor) {
+                var icon = anchor.querySelector("i");
+                icon.classList.toggle('bx-show');
+                icon.classList.toggle('bx-hide');
+                anchor.querySelector("span").textContent = icon.matches('.bx-hide') ? "************" : anchor.querySelector("span").dataset.text;
+            }
+        </script>
+
+
+
+    </div>
+</body>
+
+</html>
